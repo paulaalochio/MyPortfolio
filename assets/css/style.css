@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Signika+Negative&family=Tajawal:wght@200&family=Zeyada&display=swap');
+
+
+/* ESTRUTURA DA PÁGINA */
+
+body {
+    background-color: #171c28;
+    color: white;
+}
+
+/* CONFIGURAÇÃO DO CABEÇALHO */
+
+.header {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: white;
+    max-height: 100px;
+    height: 131px;
+    text-decoration: none;
+}
+
+.dark-menu {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    background-color: #171c28;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 8px 20px;
+    align-items: right;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.logo {
+    -webkit-font-smoothing: antialiased;
+    font: 30px/30px 'Zeyada',sans-serif;
+    color: #fff;
+    display: flex;
+    flex: none;
+    float: left;
+    font-size: 35px;
+    line-height: normal;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.dark-menu.menu {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    font-size: 12px;
+    background-color: #171c28;
+    color: #fff;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    clear: both;
+    transition: max-height .2s ease-out;
+    max-height: none;
+    text-decoration: none;
+}
+
+.dark-menu.menu li a{
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    font-size: 20px;
+    color:#fff;
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    padding-right: 100px;
+    padding-top: 13px;
+    right: 10px;
+}
+
+/* CONFIGURAÇÃO DA APRESENTAÇÃO DA PÁGINA */
+
+.saudaçao-img {
+    width: 0;
+    height: 0;
+}
+.saudaçao-img img {
+    position: relative;
+    left: 690px;
+    top: -460px;
+    margin-bottom: 0;
+}
+
+.minha-saudaçao {
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.h1-saudaçao {
+    font-size: 50px;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 500;
+}
+
+.emoji-oi {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: 1.1;
+    font-size: 40px;
+    text-align: center;
+    color: #fff!important;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+
+0% {
+    transform: rotate(0deg);
+}
+10% {
+    transform: rotate(-10deg);
+}
+20% {
+    transform: rotate(12deg);
+}
+30% {
+    transform: rotate(-10deg);
+}
+40% {
+    transform: rotate(9deg);
+}
+50% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+
+.saudaçao-text {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff;
+    flex: 1 1;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: all .3s ease-in-out 0s;
+    animation: .6s blink cursor-blink-duration, move transition-time 1.5s forwards steps(1);
+}
+
+
+/* CONFIGURAÇÃO DOS BOTÕES DAS REDES SOCIAIS */
+
+.redes-sociais  {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff;
+    font-size: 2em;
+    text-align: left;
+    text-decoration: none;
+}
+
+.icon-linkedin {
+    position: relative;
+    text-align:end;
+    text-decoration: none;
+}
+
+.fa-linkedin::before {
+    font: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    border-radius: 2.6rem;
+    color: #fff; 
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px 10px;
+    position: relative;
+    text-align: center;
+    transition: .2s ease-in;
+    user-select: none;
+    width: 2.6rem;
+    background-color: #0e76a8;
+}
+
+.icon-github {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.fa-github::before {
+    font: 19px/23px Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    border-radius: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px 10px;
+    position: relative;
+    text-align: center;
+    transition: .2s ease-in;
+    user-select: none;
+    width: 2.6rem;
+    background-color: #333;
+}
+
+.icon-email {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.fa-envelope:before {
+    font: 19px/23px Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    border-radius: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px 10px;
+    position: relative;
+    text-align: center;
+    transition: .2s ease-in;
+    user-select: none;
+    width: 2.6rem;
+    background-color: #ea4335;
+}
+
+.icon-instagram {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.fa-instagram:before {
+    font: 19px/23px Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    border-radius: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px 10px;
+    position: relative;
+    text-align: center;
+    transition: .2s ease-in;
+    user-select: none;
+    width: 2.6rem;
+    background-color: #b70c67;
+}
+
+.icon-whatsapp {
+    position: relative;
+    text-align:end;
+    text-decoration: none;
+}
+
+.fa-whatsapp::before {
+    font: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    border-radius: 2.6rem;
+    color: #fff; 
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px 10px;
+    position: relative;
+    text-align: center;
+    transition: .2s ease-in;
+    user-select: none;
+    width: 2.6rem;
+    background-color: #11ca43;
+}
+
+/* CONFIGURAÇÃO DOS BOTÕES DE DOWNLOAD E FALE COMIGO */
+
+.meus-contatos {
+    -webkit-font-smoothing: antialiased;
+    font: 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff;
+    display: flex;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.downloadmycv {
+    -webkit-font-smoothing: antialiased;
+    font: 'Montserrat',sans-serif;
+    line-height: normal;
+    text-decoration: none;
+    padding-right: 20px;
+    background-color: #e36736;
+    border: 1px solid #e36736;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out 0s;
+    width: max-content;
+    font-size: .938rem;
+    margin-right: 20px;
+    padding: 12px 18px;
+    color: #fff;
+}
+
+.fale-comigo {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: normal;
+    background-color: #e36736;
+    border: 1px solid #e36736;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out 0s;
+    width: max-content;
+    font-size: .938rem;
+    margin-right: 0;
+    padding: 12px 18px;
+    color: #fff;
+}
+
+.p-texto {
+    padding-right: 600px;
+}
+
+/* CONFIGURAÇÃO DO SOBRE MIM */
+
+.sobre-image {
+    width: 0;
+    height:0;
+}
+
+.sobre-main {
+    margin-top: 90px;
+    position: relative;
+    margin-bottom: 130px;
+    padding-top:90px;
+}
+
+.sobre-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-left: 630px;
+    margin-top: 0px;
+    padding-right: 30px;
+    text-align: left;
+    transition: all .5s ease-in-out 0s;
+}
+
+.sobre-text {
+    animation-duration: 3s;
+    animation-name: go-back;
+  }
+  
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.sobre-title {
+    font-weight: 400;
+}
+
+/* EDITAR FOTOS NA SEÇÃO SOBRE MIM */
+
+img.euzinha {
+    margin-left: 70px;
+    margin-top: 0px;
+    transition: all .5s ease-in-out 0s;
+}
+
+img.euzinha {
+    animation-duration: 3s;
+    animation-name: go-back;
+  }
+  
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dev-icons {
+    padding-left: 0;
+    padding-top: 7px;
+}
+
+.myskill img{
+    width: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-left: 5px;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*CONFIGURAÇÕES DAS HABILIDADES */
+
+.skills {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    display: flex;
+    margin: 2rem auto 0;
+    padding: 20px 10px;
+    width: 90%;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-399178201603194-4;
+}
+
+@keyframes react-reveal-399178201603194-4 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 20px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.skills-bar {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    color: #fff!important;
+    flex: 1 1;
+    margin-bottom: 30px;
+    line-height: 4rem;
+}
+
+.skills-heading {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    color: #fff!important;
+    line-height: 4rem;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.skill p span {
+        font: 19px/23px Montserrat,sans-serif;
+        background-color: transparent;
+        border: 1px solid #e36736;
+        border-radius: 100px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out 0s;
+        width: max-content;
+        font-size: .938rem;
+        margin-left: 20px;
+        padding: 12px 18px;
+        color: #fff;
+}
+.myskill {
+    display:inline-block;
+}
+.metrica {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    color: #fff!important;
+    line-height: 3.5vw;
+    background: #f3efef;
+    border-radius: 25px;
+    height: 20px;
+    position: relative;
+}
+.metrica2 {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    color: #fff!important;
+    line-height: 3.5vw;
+    background: #f3efef;
+    border-radius: 25px;
+    height: 20px;
+    position: relative;
+}
+.metrica3 {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    color: #fff!important;
+    line-height: 3.5vw;
+    background: #f3efef;
+    border-radius: 25px;
+    height: 20px;
+    position: relative;
+}
+
+.metrica span {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    color: #fff;
+    line-height: 3.5vw;
+    background-color: #e36736;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 6px;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+.metrica2 span {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    color: #fff;
+    line-height: 3.5vw;
+    background-color: #e36736;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 6px;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+.metrica3 span {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    color: #fff;
+    line-height: 3.5vw;
+    background-color: #e36736;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 6px;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.n90 {
+    animation: progress-animation-html5-css3-js-ts-py 3s ease-out;
+}
+
+.n70 {
+    animation: progress-animation-angular-agile 3s ease-out;
+}
+
+.n60 {
+    animation: progress-animation-angular-agile 3s ease-out;
+}
+
+@keyframes progress-animation-html5-css3-js-ts-py {
+    0% { width: 0%; }
+    
+    100% { width: 90%}
+    
+}
+
+@keyframes progress-animation-angular-agile {
+    0% { width: 0%; }
+    
+    100% { width: 70%}
+    
+}
+
+@keyframes progress-animation-java {
+    0% { width: 0%; }
+    
+    100% { width: 60%}
+    
+}
+
+/*CONFIGURAÇÕES DOS PROJETOS */
+
+.projects {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    margin: 4rem auto 0;
+    padding: 20px 10px;
+    width: 90%;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-794284215106760-4;
+}
+
+.projects div {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: normal;
+    color: #fff!important;
+}
+
+.projects-title {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.projects-container {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    grid-gap: 1rem 1rem;
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.project-card {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: normal;
+    border: 1px solid hsla(16, 91%, 50%, 0.397);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px -15px #e36736;
+    transition: all .25s ease;
+    color: #fff!important;
+    background-color: #171c28;
+}
+
+.project-img {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px Montserrat,sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    align-items: center;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.visit-website {
+    font-family: 'Montserrat', sans-serif;
+    color: #fbf8f7;
+    padding: 5px;
+    text-decoration: none;
+    background-color:#e36736;
+    border: 1px solid #e36736;
+    border-radius: 6px;
+}
+
+.project-img img{
+    border-radius: 10px;
+}
+
+/*CONFIGURAÇÃO DA SEÇÃO CONTACT-ME */
+
+.contact-me {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    margin: 4rem auto 0;
+    padding: 20px 10px 20px 60px;
+    width: auto;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-794284215106760-4;
+    text-align: left;
+    position: relative;
+    top: 50px;
+}
+
+@keyframes react-reveal-794284215106760-4 {
+0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+}
+
+100% {
+    opacity: 1;
+    transform: none;
+}
+}
+
+.fale-comigo-footer { 
+    font-weight: 400;
+    margin: 0;
+    font-size: 40px;
+    padding-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-profile {
+    flex: 80% 1;
+    order: 2;
+}
+
+.contact-subtitle p {
+    color: #868e96!important;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.bio-text {
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.location{
+    padding-bottom: 1rem;
+}
+
+.open-op p {
+    padding-bottom: 1rem;
+}
+
+.social-media-div {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.social-media-div a img {
+    font-size: 2em;
+    width: 50px;
+    text-decoration: none;
+}
+
+
+/*IMAGEM FINAL*/
+
+.image-content-profile {
+    max-width: 100%;
+    text-align: right;
+    margin-left: 0px;
+    margin-right: auto;
+    order: 1;
+}
+
+.profile-image {
+    position: absolute;
+    text-align: right;
+    border-radius: 50%;
+    box-shadow: 0 30px 30px -30px #0000001a;
+    transition: all .3s ease-out;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    max-width: 250px;
+    width: 100%;
+    padding:0;
+    top: 20px;
+    left: 1020px;
+}
+
+.finish-footer {
+    -webkit-font-smoothing: antialiased;
+    font: 19px/23px 'Montserrat',sans-serif;
+    line-height: normal;
+    color: #fff!important;
+    margin: 4rem auto 0;
+    padding: 1px 10px;
+    width: auto;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-794284215106760-4;
+    text-align: center;
+}
+
+button#topButton {
+    -webkit-font-smoothing: antialiased;
+    background-color: #e36736;
+    border: none;
+    border-radius: 15px;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    outline: none;
+    padding: 15px;
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+    visibility: visible;
+}
+
+.botaozinho {
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    visibility: visible;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.botaozinho:before {
+    content: "\f0a6";
+}
